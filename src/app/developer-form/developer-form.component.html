@@ -1,0 +1,19 @@
+<form (ngSubmit)="onSubmit()" #developerForm="ngForm">
+  <div class="form-group">
+    <label for="name" >Name</label>
+    <input class="form-control" id="name" placeholder="Enter Name" [(ngModel)]="developerModel.name" name="name"/>
+  </div>
+  <div class="form-group">
+    <label for="name" >Skill</label>
+    <input class="form-control" id="name" placeholder="software developer, java developer maupun ux developer" [(ngModel)]="developerModel.skill" name="skill"/>
+  </div>
+  <div class="form-group">
+    <label for="name" >Phone</label>
+    <input class="form-control" id="name" placeholder="Enter Phone Number" [(ngModel)]="developerModel.phone" name="phone"/>
+  </div>
+  <div class="form-group">
+    <label for="name">Notes</label>
+    <input class="form-control" id="name" placeholder="Enter Notes" [(ngModel)]="developerModel.notes" name="notes"/>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

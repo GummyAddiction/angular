@@ -1,0 +1,12 @@
+<div class="card-deck" *ngIf="developer" >
+  <div class="card border-primary mb-3" style="max-width: 18rem">
+    <div class="card-body">
+      <h3 class="card-title">{{ developer.name }}</h3>
+      <p class="card-text">{{ developer.skill }}</p>
+      <p class="card-text">{{ developer.phone }}</p>
+      <p class="card-text">{{ developer.notes }}</p>
+      <button type="button" class="btn btn-primary" routerLink="/form/{{developer.id}}">Edit Profile </button>
+      <button type="button" class="btn btn-danger" (click)="deleteDeveloper()" >Delete</button>
+    </div>
+  </div>
+</div>
